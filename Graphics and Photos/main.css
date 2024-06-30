@@ -1,0 +1,101 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* Navigation */
+nav {
+  width: 100%;
+  height: 90px;
+  background-color: #133748;
+  /* border-bottom: 0.5px solid #9bb870; */
+  box-shadow: 0 16px 16px 0 rgba(0, 0, 0, 0.4), 0 12px 40px 0 rgba(0, 0, 0, 0.19);
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  margin: auto;
+  box-shadow: 0 0 10px 0 #5d5e5d inset;
+  justify-content: space-between;
+}
+
+.navbar ul {
+  display: flex;
+  width: 97%;
+}
+
+.navbar ul li {
+  list-style-type: none;
+  margin-right: 24px;
+  width: 25%;
+}
+
+.navButton {
+  background: rgba(234, 161, 30, 0);
+  border-left: 1px solid rgba(234, 161, 30, 1);
+  border-right: 1px solid rgba(234, 161, 30, 1);
+  background: url("../resources/Graphics and Photos/Untitled8_20240630134759.png") no-repeat scroll;
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 0.5px );
+  -webkit-backdrop-filter: blur( 0.5px );
+  border-radius: 4px;
+  border: 1px solid rgba( 255, 255, 255, 0.2 );
+  /* border-top: none;
+  border-bottom: none; */
+  padding: 15px;
+  width: 75%;
+  height: 100%;
+  transition-duration: 0.4s;
+  font-size: 23px;
+  font-family: Helvetica, sans-serif;
+  color: #f4c223;
+  text-shadow: 1px 1px 2px gray;
+}
+
+.navButton:hover {
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+  background: rgba(92, 133, 152, 0.2);
+  color: #e0f7de;
+  border-bottom: 3px solid #5c490e;
+  border-right: 3px solid #5c490e;
+  box-shadow: 0 0 5px white inset;
+}
+
+/* Navigation Mobile */
+@media only screen and (min-width: 645px) and (max-width: 834px) {
+  .navButton {
+    font-size: 19px;
+    
+  }
+}
+
+
+/* Hamburger Menu */
+@media only screen and (max-width: 644px) {
+  .navButton {
+    font-size: 12px;
+    
+  }
+}
+
+
+/* Main */
+
+.mainHeader {
+  width: 100%;
+  /* Change This When Content */
+  height: 1000px; 
+  background-color: #1B3643;
+  border-bottom: 0.5px solid #9bb870;
+  box-shadow: 0 16px 16px 0 rgba(0, 0, 0, 0.4), 0 12px 40px 0 rgba(0, 0, 0, 0.19);
+}
